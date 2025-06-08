@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TIENDA_VIRTUAL.Modelos
+namespace TIENDA_VIRTUAL
 {
-    internal class Cliente
+    public class Cliente
     {
         public int Id { get; }
-        public string Nombre { get;  }
+        public string Nombre { get; }
         public string Email { get; }
-        public string CPF { get;  }
+        public string Cpf { get; }
+
         public Cliente(int id, string nombre, string email, string cpf)
         {
-           
             Id = id;
             Nombre = nombre;
             Email = email;
-            CPF = cpf;
+            Cpf = cpf;
         }
     }
 }
