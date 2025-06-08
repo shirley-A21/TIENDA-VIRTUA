@@ -8,17 +8,17 @@ namespace TIENDA_VIRTUAL
 {
     public class DescuentoPorCategoria : IDescuentoStrategy
     {
-        private readonly string categoriaObjetivo;
+        private readonly string categoria;
         private readonly decimal porcentaje;
         public DescuentoPorCategoria(string categoria, decimal porcentaje)
         {
-            categoriaObjetivo = categoria;
+            this.categoria = categoria;
             this.porcentaje = porcentaje;
         }
         public decimal CalcularDescuento(Pedido pedido)
         {
             var totalCategoria = pedido.Items
-              .Where(i => i.Producto.Categoria == categoriaObjetivo)
+              .Where(i => i.Producto.Categoria == categoria)
               .Sum(i => i.Subtotal());
 
             return totalCategoria * porcentaje;
