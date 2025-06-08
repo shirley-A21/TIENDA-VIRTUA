@@ -29,9 +29,9 @@ namespace TIENDA_VIRTUAL
         }
 
         public void AplicarDescuento(IDescuentoStrategy estrategia)
-        {
+        {                                    //interfaz
             decimal descuento = estrategia.CalcularDescuento(this);
             Total -= descuento;
         }
-    }
+    }//ya completo junto con calculo total 
 }
