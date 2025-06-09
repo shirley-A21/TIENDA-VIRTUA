@@ -15,8 +15,7 @@ namespace TIENDA_VIRTUAL
 
         public Producto(int id, string nombre, decimal precio, string categoria)
         {
-            if (precio <= 0)
-                throw new ArgumentException("El precio debe ser mayor que cero.");
+            if (precio <= 0) throw new ArgumentException("El precio debe ser mayor que cero.");
 
             Id = id;
             Nombre = nombre;
