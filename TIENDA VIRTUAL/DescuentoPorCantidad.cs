@@ -16,6 +16,8 @@ namespace TIENDA_VIRTUAL
             this.cantidadMinima = cantidadMinima;
             this.porcentaje = porcentaje;
         }
+        // estrategia de descuento basada en la cantidad minima de productos 
+        //restructurado unas 3  veces , mezclando con estrategy 
 
         public decimal CalcularDescuento(Pedido pedido)
         {
