@@ -23,7 +23,7 @@ namespace TIENDA_VIRTUAL
 
             return totalCategoria * porcentaje;
         }
-    } //solo a cierta categoria 
+    } //solo a cierta categoria, se basea en eso  
     
 }
 
