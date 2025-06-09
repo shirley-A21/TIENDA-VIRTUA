@@ -14,7 +14,7 @@ namespace TIENDA_VIRTUAL
         {
             pedidos.Add(pedido);
         }
-
+        // guarda y lista pedidos en memoria 
         public List<Pedido> ListarTodos()
         {
             return pedidos;
